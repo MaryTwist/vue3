@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="index.css" />
+    </head>
+    <body>
+        <div id="app1">
+            <div class="wrapper" v-on:mousemove="onMouseMove">
+                <span>x: {{ x }} y: {{ y }}</span>
+                <div class="widget"
+                    v-for="w in widgets"
+                    v-on:click="onClick(w)"
+                    v-bind:style="{ left: w.x, top: w.y, width: w.w, height: w.h }"
+                    v-bind:class="{ widget_hold: w.hold }">
+                    {{ w.title }}
+                </div>
+            </div>
+        </div>
+
+        <script src="libs/vue/dist/vue.min.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
