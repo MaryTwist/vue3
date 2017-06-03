@@ -6,14 +6,35 @@
     </head>
     <body>
         <div id="app1">
+            <div class="toolbar toolbar_top">
+                <div class="toolbar__btn">S</div>
+                <div class="toolbar__btn">M</div>
+                <div class="toolbar__btn">R</div>
+            </div>
+
+            <div class="toolbar toolbar_bottom">x: {{ x }} y: {{ y }}</div>
+
             <div class="wrapper" v-on:mousemove="onMouseMove">
-                <span>x: {{ x }} y: {{ y }}</span>
+                
                 <div class="widget"
                     v-for="w in widgets"
                     v-on:click="onClick(w)"
-                    v-bind:style="{ left: w.x, top: w.y, width: w.w, height: w.h }"
+                    v-bind:style="{ left: w.getLeft(), top: w.getTop(), width: w.getW(), height: w.getH() }"
                     v-bind:class="{ widget_hold: w.hold }">
-                    {{ w.title }}
+
+                    <div class="widget__header" style="height: 20px;">
+                        {{ w.title }}
+                    </div>
+                    
+                    <div class="widget__body" v-bind:style="{ height: (w.h - 40) + 'px' }">
+                        asdf<br />
+                        alkdmvadfk adlfkvmadkflv alkdfmvakdfmva adl;fkvmadfkvmafdkvm
+                        afvldakmfvadkfmv foerpfoerkopae uadevraeri[ea
+                        <br />kfkvmldfkmvdfkvmdk
+                        kmdflkvmkdl<br />
+                        ioritrhoh34059049hk]
+                    </div>
+
                 </div>
             </div>
         </div>
