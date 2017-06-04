@@ -1,0 +1,28 @@
+.editor__form {
+    position: fixed;
+
+    left: 6px;
+    top: 50px;
+
+    width: 150px;
+    height: 320px;
+
+    padding: 4px;
+
+    background-color: #e8e8e8;
+    border: 1px solid #c8c8c8;
+    border-radius: 3px;
+
+    visibility: visible;
+
+    transition-property: visibility;
+    transition-duration: 200ms;
+}
+
+.editor__form input[type=text] {
+    width: 90%;
+}
+
+.editor__form_hidden {
+    visibility: hidden;
+}

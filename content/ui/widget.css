@@ -1,0 +1,37 @@
+.widget {
+    position: absolute;
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+    background-color: #fff;
+
+    transition-property: left, top;
+    transition-duration: 200ms;
+}
+
+.widget:hover {
+    border-color: #aaaaff;
+}
+
+.widget.widget_hold {
+    background-color: #fff0f0;
+    border-color: #ef006e;
+}
+
+.widget .widget__header {
+    width: 100%;
+    padding: 2px 0px 2px 0px;
+    text-align: center;
+    vertical-align: middle;
+
+    border-bottom: 1px solid #e8e8e8;
+
+    font-style: italic;
+}
+
+.widget .widget__body {
+    padding: 2px;
+    text-align: left;
+    vertical-align: top;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
