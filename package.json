@@ -1,0 +1,22 @@
+{
+  "name": "vue3",
+  "version": "1.0.0",
+  "description": "Прототип интерфейса пользователя для визуального программирования",
+  "main": "scripts/site.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaryTwist/vue3.git"
+  },
+  "author": "Serjin_RwD",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaryTwist/vue3/issues"
+  },
+  "homepage": "https://github.com/MaryTwist/vue3#readme",
+  "dependencies": {
+    "vue": "^2.3.3"
+  }
+}
