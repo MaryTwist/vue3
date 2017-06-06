@@ -3,9 +3,6 @@
     border: 1px solid #e8e8e8;
     border-radius: 3px;
     background-color: #fff;
-
-    transition-property: left, top;
-    transition-duration: 200ms;
 }
 
 .widget:hover {
