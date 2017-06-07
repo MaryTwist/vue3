@@ -37,7 +37,14 @@
                     v-bind:class="{ widget_hold: w.hold }">
 
                     <div class="widget__header" style="height: 20px;">
-                        {{ w.title }}
+                        <div class="widget__header-title">
+                            {{ w.title }}
+                        </div>
+                        <div class="widget__header-commands widget__header-commands_show-hover">
+                            <div class="widget__btn">
+                                x
+                            </div>
+                        </div>
                     </div>
                     
                     <div class="widget__body" v-bind:style="{ height: (w.h - 40) + 'px' }">

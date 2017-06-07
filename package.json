@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/MaryTwist/vue3#readme",
   "dependencies": {
+    "fontawesome": "^4.7.2",
     "vue": "^2.3.3"
   }
 }

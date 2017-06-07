@@ -14,18 +14,48 @@
     border-color: #ef006e;
 }
 
-.widget .widget__header {
-    width: 100%;
-    padding: 2px 0px 2px 0px;
-    text-align: center;
-    vertical-align: middle;
+.widget__btn {
+    display: inline-block;
 
-    border-bottom: 1px solid #e8e8e8;
+    width: 16px;
+    height: 16px;
 
-    font-style: italic;
+    border: 1px solid #000;
+    border-radius: 2px;
 }
 
-.widget .widget__body {
+.widget__header {
+    width: 100%;
+
+    padding: 2px 0px 2px 0px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+widget__header-title {
+    display: inline-block;
+    position: absolute;
+    left: 6px;
+    top: 2px;
+}
+
+.widget__header-commands {
+    display: inline-block;
+    position: absolute;
+    right: 6px;
+    top: 2px;
+}
+
+.widget__header-commands_show-hover {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 150ms;
+}
+
+.widget:hover .widget__header-commands_show-hover {
+    opacity: 1;
+}
+
+.widget__body {
     padding: 2px;
     text-align: left;
     vertical-align: top;
