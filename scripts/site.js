@@ -1,5 +1,11 @@
 "use strict";
 
+let _lastId = 0;
+
+function getId() {
+    return ++_lastId;
+}
+
 function Widget(_title, _text, _x, _y, _w, _h) {
     let self = this;
 
@@ -14,6 +20,7 @@ function Widget(_title, _text, _x, _y, _w, _h) {
     this.getTop = function() { return self.y + "px" };
     this.getW = function() { return self.w + "px" };
     this.getH = function() { return self.h + "px" };
+    this.id = getId();
 }
 
 let v = new Vue({
@@ -72,6 +79,10 @@ let v = new Vue({
             ));
 
             this.editingWidget.title = this.editingWidget.text = "";
+        },
+
+        btnDeleteClick: function(o) {
+            alert(o.id);
         }
     }
 });

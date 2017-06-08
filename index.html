@@ -41,7 +41,7 @@
                             {{ w.title }}
                         </div>
                         <div class="widget__header-commands widget__header-commands_show-hover">
-                            <div class="widget__btn">
+                            <div v-on:click="btnDeleteClick(w)" class="widget__btn">
                                 x
                             </div>
                         </div>
